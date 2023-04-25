@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Tab Content</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+    </style>
+</head>
+
+<body style="background-color: rgb(53, 51, 51);">
+    <h1 class="title">Tabs</h1>
+    <div class="tabcontainer">
+        <div class="buttoncontainer">
+            <button id="tab_1" onclick="showpanel(0,'#62616b')">Tab 1</button>
+            <button id="tab_2" onclick="showpanel(1,'#546eab')">Tab 2</button>
+        </div>
+        <div class="default_tabPanel">
+            <!-- image section -->
+            
+            <section class="img_section">
+                <img src="./image/welcome.jpeg" alt="Welcome" width="300px" class="img_animation">
+            </section>
+            
+            <!-- Welcome Text Section -->
+
+            <section class='awesome_clock 'style="">Welcome to Awesome Clock</section>
+        </div>
+        <div class="tabPanel">
+            <section class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" onclick="leftClick()">12&nbsp;hrs</button>
+                <button class="toggle-btn" onclick="rightClick()">24&nbsp;hrs</button>
+            </section>
+        </div>
+        <!-- <div class="tabPanel">Tab 2: Content</div> -->
+    </div>
+    <script src="./jscript/main.js"></script>
+</body>
+
+</html>
